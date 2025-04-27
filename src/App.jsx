@@ -13,7 +13,9 @@ function App() {
 //    { input: 'Dê oi à vovozinha', complete: true }
 //  ]
 
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([
+      { input: 'Yo! Adicione sua primeira tarefa!', complete: false }
+    ])
 
   const [selectedTab, setSelectedTab] = useState('Todos')
   
