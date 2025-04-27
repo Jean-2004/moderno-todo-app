@@ -61,6 +61,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin: 20px 0 20px 0;
   border: none;
 }
 
@@ -150,5 +151,6 @@ hr {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    margin: 20px 0 20px 0;
   }
 }
