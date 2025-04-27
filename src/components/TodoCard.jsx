@@ -16,20 +16,20 @@ export default function TodoCard(props) {
           handleCompleteTodo(todoIndex)
         }}
         disabled={todo.complete || editingCard}>
-          <h6>Done</h6>
+          <h6>Completar</h6>
         </button>
         <button onClick={() => {
           (editingCard ? handleEditTodo(todoIndex, inputValue) :
           setInputValue(todo.input))
           setEditingCard(!editingCard)
         }}>
-          <h6>Edit</h6>
+          <h6>Editar</h6>
         </button>
         <button onClick={() => {
           handleDeleteTodo(todoIndex)
         }}
         disabled={editingCard}>
-          <h6>Delete</h6>
+          <h6>Deletar</h6>
         </button>
       </div>
     </div>
