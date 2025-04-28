@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Header(props) {
   const { todos } = props
-  const todosLength = todos.length
+  const todosLength = todos.filter(val => !val.complete).length
 
-  const isTasksPlural = todos.length != 1
+  const isTasksPlural = todos.filter(val => !val.complete).length != 1
 
   const taskOrTasks = isTasksPlural ? 'tarefas ativas' : 'tarefa ativa'
 
